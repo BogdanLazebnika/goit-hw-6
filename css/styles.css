@@ -860,3 +860,104 @@ img{
     background-color: #404BBF;
 }
 
+
+
+
+
+@media (max-width: 1158px) {
+    .list-header.contacts{
+        flex-direction: column;
+        gap: 12px;
+    }
+    .header-container{
+       width: auto;
+    }
+
+    .hero-container{
+        width: auto;
+    }
+
+
+
+    .section-one-container{
+        width: auto;
+    }
+    .section-one-icon-container{
+        display: none;
+    }
+    .list-section-one li{
+        width: calc((100% - 72px) / 2);
+    }
+    .section-one-card{
+        min-width: 356px;
+    }
+    .list-section-one{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+
+    .section-two-container{
+        width: auto;
+    }
+    .team-row-one{
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+    }
+    .team-card{
+        flex-basis: calc((100% - 72px) / 2);
+        min-width: 356px;
+    }
+    .team-card img{
+        width: 100%;
+        height: auto;
+        border-radius: 4px 4px 0 0;
+    }
+
+
+
+
+
+    .section-tree-container{
+        width: auto;
+    }
+    .portfolio-row-one{
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+    }
+    .portfolio-card{
+        min-width: 356px;
+        max-width: 500px;
+    }
+    .portfolio-card {
+        width: calc((100% - 48px) / 2);
+    }
+    .portfolio-card-container img{
+        width: 100%;
+        height: auto;
+        border-radius: 4px 4px 0 0;
+    }
+
+
+
+
+    .footer-container {
+        width: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .footer-form-container{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 72px;
+    }
+}
