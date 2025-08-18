@@ -34,6 +34,77 @@
                     <li class="item-contact"><a class="contact-header" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+
+            <button class="burger-menu">
+                <span class="burger-menu-line"></span>
+                <span class="burger-menu-line"></span>
+                <span class="burger-menu-line"></span>
+            </button>
+
+            <div class="burger-menu-modal">
+                <nav class="nav-modal-mobile">
+                    <ul class="list-header-mobile">
+                        <li class="item-header"><a class="button-header active-mobile" href="./index.html">Studio</a></li>
+                        <li class="item-header"><a class="button-header" href="">Portfolio</a></li>
+                        <li class="item-header"><a class="button-header" href="">Contacts</a></li>
+                    </ul>
+                </nav>
+
+
+                <div class="burger-menu-down-info">
+
+                    <address class="address-header-mobile">
+                        <ul class="list-header-mobile contacts">
+                            <li class="item-contact"><a class="contact-header" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li class="item-contact"><a class="contact-header" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                        </ul>
+                    </address>
+                    
+                    <ul class="list-mobile-burger-social">
+                        <li class="item-social-mobile"><a class="social-header-mobile" href="">
+                            <svg class="social-icon-mobile" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram-footer"></use>
+                            </svg>
+                        </a></li>
+                        <li class="item-social-mobile"><a class="social-header-mobile" href="">
+                            <svg class="social-icon-mobile" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter-footer"></use>
+                            </svg>
+                        </a></li>
+                        <li class="item-social-mobile"><a class="social-header-mobile" href="">
+                            <svg class="social-icon-mobile" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook-footer"></use>
+                            </svg>
+                        </a></li>
+                        <li class="item-social-mobile"><a class="social-header-mobile" href="">
+                            <svg class="social-icon-mobile" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin-footer"></use>
+                            </svg>
+                        </a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+
+            <script>
+                const burgerMenu = document.querySelector('.burger-menu');
+                const navHeader = document.querySelector('.burger-menu-modal');
+
+                burgerMenu.addEventListener('click', () => {
+                    navHeader.classList.toggle('open');
+                    burgerMenu.classList.toggle('open');
+                });
+
+                // Закриття меню, якщо сторінка не на самому верху
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY !== 0) {  // якщо сторінка не на верхівці
+                        navHeader.classList.remove('open');
+                        burgerMenu.classList.remove('open');
+                    }
+                });
+
+            </script>
         </div>
     </header>
 
@@ -390,7 +461,7 @@
     </footer>
 
     <!-- Modal -->
-    <div class="backdrop is-open!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" data-modal>
+    <div class="backdrop is-open!" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-button" data-modal-close>
                 <svg class="modal-close-icon" width="8" height="8">
