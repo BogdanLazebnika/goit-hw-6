@@ -1,0 +1,225 @@
+:root {
+	--iris: #4d5ae5;
+	--ocean: #404bbf;
+	--navy-blue: #2e2f42;
+	--green: #31d0aa;
+	--slate: #434455;
+	--light-slate: #8e8f99;
+	--cornflower: #e7e9fc;
+	--cloud: #f4f4fd;
+	--navy-blue-modal: rgba(46, 47, 66, 0.4);
+	--grey: rgba(46, 47, 66, 0.7);
+	--white: #fff;
+	--dairy: #fcfcfc;
+}
+
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+}
+
+
+
+body{
+    font-family: var(--font-family);
+    color: var(--slate);
+    background-color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul, ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+
+
+/* common styles */
+.container {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+    }
+}
+
+
+/* header */
+.header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+    background: var(--white);
+}
+
+.logo-header{
+   font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris);
+
+    display: inline-block;
+    padding: 16px 0;
+}
+.logo-header span {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--navy-blue);
+}
+
+.list-header,
+.address-header {
+    display: none;
+}
+
+.burger-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--navy-blue);
+
+    padding: 16px 0;
+}
+
+
+@media screen and (min-width: 768px) {
+    .header-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .burger-button {
+        display: none;
+    }
+
+    .nav-header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 120px;
+    }
+    .list-header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 40px;
+    }
+
+    .button-header{
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: var(--navy-blue);
+        height: 48px;
+        display: inline-flex;
+
+        margin-top: 24px;
+    }
+    .button-header.active {
+       font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: var(--ocean);
+    }
+    .button-header.active{
+        position: relative;
+        color: #404BBF;
+    }
+    .active::after{
+        content: "";
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #404BBF;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        background-color: #404bbf;
+        border-radius: 2px;
+
+    }
+
+
+    .address-header{
+        display: flex;
+    }
+    .address-header .list-header{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 12px;
+    }
+    .address-header .list-header .contact-header{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 117%;
+        letter-spacing: 0.04em;
+        color: var(--slate);
+    }
+
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+    }

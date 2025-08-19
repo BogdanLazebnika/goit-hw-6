@@ -1,0 +1,105 @@
+
+
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul, ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+
+
+/* common styles */
+.container {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+    }
+}
+
+
+/* header */
+.header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-header{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris);
+
+}
+
+
+.list-header,
+.address-header {
+    display: none;
+}
+
+
+
+
+.burger-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

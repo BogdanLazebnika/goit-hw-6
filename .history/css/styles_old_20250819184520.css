@@ -1,0 +1,127 @@
+n */
+/* Перша секція */
+
+
+
+
+
+
+
+
+/* Стилізація */
+
+.list-header{
+    display: flex;
+    gap: 40px;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.container{
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav-header{
+    display: flex;
+    align-items: center;
+}
+
+.logo-header{
+    margin-right: 76px;
+
+}
+
+.list-header{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+
+    
+}
+
+.button-header{
+    padding: 24px 0;
+    display: block;
+}
+.list-header{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+
+
+
+.list-section-one{
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-section-one li{
+    width: calc((100% - 72px) / 4);    
+}
+.section-one-card {
+    width: calc((100% - 72px) / 4);
+}
+.header-section-one{
+    margin-bottom: 8px;
+}
+
+
+
+
+.section-tree{
+    padding: 120px 0;
+}
+.header-section-tree{
+    margin-bottom: 72px;
+}
+
+
+.portfolio-row-one{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    list-style: none;
+}
+
+.portfolio-card{
+    width: calc((100% - 48px) / 3);
+}
+
+
+.portfolio-card-overlay{
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
+
+.header-portfolio{
+    margin: 0;
+    margin-bottom: 8px;
+}
+.paragraph-portfolio{
+    margin: 0;
+}
+
+
